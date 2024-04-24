@@ -1,3 +1,15 @@
+# v0.1.29 (Wed Apr 24 2024)
+
+#### 🐛 Bug Fix
+
+- fix: support additional properties without xDictionaryKey [#52](https://github.com/LandrAudio/openapi-codegen-typescript/pull/52) ([@RicherStAmand](https://github.com/RicherStAmand))
+
+#### Authors: 1
+
+- Richer St-Amand ([@RicherStAmand](https://github.com/RicherStAmand))
+
+---
+
 # v0.1.28 (Mon Aug 21 2023)
 
 #### 🐛 Bug Fix
