@@ -143,8 +143,6 @@ export const parseSchema = ({ schema, name, DTOs, overrideSchemas }: ParseSchema
                         name,
                         propertyName,
                         format,
-                        minLength,
-                        maxLength,
                     });
                     mocks.push(stringMock);
                 }
@@ -191,6 +189,15 @@ export const parseSchema = ({ schema, name, DTOs, overrideSchemas }: ParseSchema
                             additionalProperties,
                             DTOs,
                             overrideSchemas,
+                        }),
+                    );
+                }
+
+                if (!xDictionaryKey && additionalProperties) {
+                    mocks.push(
+                        mockGenerator.getAdditionalPropertiesMock({
+                            propertyName,
+                            additionalProperties,
                         }),
                     );
                 }
